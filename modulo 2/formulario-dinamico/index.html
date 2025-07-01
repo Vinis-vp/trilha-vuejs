@@ -1,0 +1,27 @@
+<div id="app">
+    <form>
+      <label>Nome:</label>
+      <input v-model="form.nome" /><br><br>
+  
+      <label>Gênero:</label>
+      <label><input type="radio" value="Masculino" v-model="form.genero" /> Masculino</label>
+      <label><input type="radio" value="Feminino" v-model="form.genero" /> Feminino</label><br><br>
+  
+      <label>Interesses:</label>
+      <label><input type="checkbox" value="Esportes" v-model="form.interesses" /> Esportes</label>
+      <label><input type="checkbox" value="Música" v-model="form.interesses" /> Música</label>
+      <label><input type="checkbox" value="Leitura" v-model="form.interesses" /> Leitura</label><br><br>
+  
+      <label>Cidade:</label>
+      <select v-model="form.cidade">
+        <option disabled value="">Selecione</option>
+        <option>São Paulo</option>
+        <option>Rio de Janeiro</option>
+        <option>Curitiba</option>
+      </select>
+    </form>
+  
+    <h3>Dados em tempo real:</h3>
+    <pre>{{ form }}</pre>
+  </div>
+  

@@ -1,0 +1,10 @@
+<div id="app">
+    <input
+      v-model="texto"
+      @keyup.enter="salvarTexto"
+      @keyup.esc="limparTexto"
+      placeholder="Digite algo e pressione Enter ou Esc"
+    />
+    <p>Texto salvo: {{ textoSalvo }}</p>
+  </div>
+  

@@ -1,0 +1,8 @@
+<div id="app">
+    <h2>Exemplo de ciclo de vida</h2>
+    <p v-if="dados.length === 0">Carregando dados...</p>
+    <ul v-else>
+      <li v-for="(item, index) in dados" :key="index">{{ item }}</li>
+    </ul>
+  </div>
+  

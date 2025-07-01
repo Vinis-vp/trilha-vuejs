@@ -1,0 +1,28 @@
+<div id="app">
+    <table border="1" cellpadding="5">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Preço</th>
+          <th>Quantidade</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(produto, index) in produtos" :key="index">
+          <td>{{ produto.nome }}</td>
+          <td>
+            <span v-if="!produto.editando">{{ produto.preco.toFixed(2) }}</span>
+            <input v-else type="number" v-model.number="produto.preco" step="0.01" />
+          </td>
+          <td>{{ produto.quantidade }}</td>
+          <td>
+            <button @click="editar(index)">
+              {{ produto.editando ? 'Salvar' : 'Editar' }}
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
