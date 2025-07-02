@@ -51,6 +51,7 @@ src/
 ├── services/ # Arquivos de API (ex: api.js, authService.js)
 ├── styles/ # SCSS globais, temas, variáveis
 
+---
 
 ## 5. 🧑‍🎨 Exemplos práticos
 
@@ -69,6 +70,7 @@ src/
     <v-btn color="primary">Ver detalhes</v-btn>
   </v-card-actions>
 </v-card>
+```
 
 ## 6. 🧠 Dicas de design visual no Vue
 
